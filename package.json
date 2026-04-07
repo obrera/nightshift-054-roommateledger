@@ -9,7 +9,7 @@
     "dev:client": "vite",
     "build": "bun run build:client && bun run build:server",
     "build:client": "vite build",
-    "build:server": "bun build server/index.ts --target bun --outfile dist/server/index.js", 
+    "build:server": "bun build server/index.ts --target bun --outfile dist/server/index.js",
     "start": "NODE_ENV=production bun dist/server/index.js"
   },
   "dependencies": {

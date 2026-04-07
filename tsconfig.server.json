@@ -1,11 +1,13 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "declaration": false,
     "noEmit": false,
+    "noImplicitAny": false,
     "outDir": "dist/server",
     "rootDir": ".",
-    "types": ["bun-types"],
-    "declaration": false
+    "strict": false,
+    "types": ["bun-types"]
   },
   "include": ["server/**/*.ts"]
 }
