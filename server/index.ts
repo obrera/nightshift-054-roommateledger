@@ -28,7 +28,7 @@ const port = Number(process.env.PORT ?? 3000);
 
 const authSchema = z.object({
   name: z.string().trim().min(2).max(80).optional(),
-  email: z.email().transform((value) => value.toLowerCase()),
+  email: z.string().email().transform((value) => value.toLowerCase()),
   password: z.string().min(8).max(120)
 });
 
